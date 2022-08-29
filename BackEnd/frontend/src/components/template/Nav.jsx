@@ -1,5 +1,6 @@
 import './Nav.css'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Nav (props) {
     return (
@@ -7,12 +8,15 @@ function Nav (props) {
         <aside className="menu-area">
         <nav className="menu">
             <hr />
-            <a href="#/">
+            <Link to='/'>
                 <i className='fa fa-home'></i> Inicío
-            </a>
-            <a href="#/users">
+            </Link>
+            
+            <Link to='/users'>
                 <i className='fa fa-users'></i> Usuários
-            </a>
+            </Link>
+
+
         </nav>
     </aside>
 
